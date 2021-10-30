@@ -1,0 +1,13 @@
+#projects {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+#projects .content {
+    margin-top: 600px;
+}
+
+#projects .content img {
+    object-fit: cover;
+    height: 200px;
+}
