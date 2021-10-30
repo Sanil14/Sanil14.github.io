@@ -1,8 +1,8 @@
 body {
     color: white;
-    background-color: black;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    background-color: rgb(20, 16, 16);
+    background-image: radial-gradient(#cfcfcf, transparent 5%);
+    background-size: 50px 50px;
 }
 
 .namecenter {
@@ -147,7 +147,6 @@ body {
     overflow-x: hidden;
     height: 100vh;
     width: 100%;
-    background-color: black;
 }
 
 #aboutme .namecenter .text {
@@ -163,7 +162,6 @@ body {
 #projects {
     overflow-x: hidden;
     width: 100%;
-    background-color: black;
 }
 
 #projects .content {

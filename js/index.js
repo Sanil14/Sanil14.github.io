@@ -13,15 +13,6 @@ $(document).ready(() => {
 
     new Typed(".namecenter h1", options);
 
-    VANTA.NET({
-        el: ".background",
-        color: 0xffffff,
-        backgroundColor: 0x0,
-        points: 7.00,
-        maxDistance: 10.00,
-        spacing: 17.00
-    })
-
     $(".openbtn").click(function (e) {
         e.preventDefault();
         e.stopPropagation();
