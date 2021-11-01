@@ -4,11 +4,11 @@
 /* Extra small devices (phones, 600px and down) */
 
 @media (max-width: 600px) {
-    .namecenter h1 {
+    .typewriter h1 {
         text-align: center;
         font-size: 2.5em;
     }
-    .non-typewriter p {
+    .title h3 {
         font-size: 2em;
     }
     .openbtn {
@@ -30,7 +30,7 @@
         font-size: 3.5em;
         text-align: center;
     }
-    .non-typewriter p {
+    .title h3 {
         font-size: 3em;
     }
     .openbtn {
@@ -46,7 +46,7 @@
         font-size: 4em;
         text-align: center;
     }
-    .non-typewriter p {
+    .title h3 {
         font-size: 3.5em;
     }
 }

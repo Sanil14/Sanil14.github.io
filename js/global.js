@@ -2,7 +2,7 @@ $(() => {
 
     new WOW().init();
 
-    $(".openbtn").click(function (e) {
+    $(".burger").click(function (e) {
         e.preventDefault();
         e.stopPropagation();
         if ($(".sidepanel").height() > 0) {
@@ -27,6 +27,6 @@ $(() => {
 
     function hideNav() {
         $(".sidepanel").css('height', '0px');
-        $(".openbtn").removeClass('open')
+        $(".burger").removeClass('open')
     }
 })

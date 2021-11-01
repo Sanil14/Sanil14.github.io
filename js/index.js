@@ -9,5 +9,5 @@ $(() => {
         loop: true
     };
 
-    new Typed(".namecenter h1", options);
+    new Typed(".typewriter h1", options);
 })
