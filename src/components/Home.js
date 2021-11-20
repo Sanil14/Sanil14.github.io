@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <Container>
             <Row className="center title wow fadeIn">
-                <h3>Hey, I'm <span class="warning">Sanil Jalan</span></h3>
+                <h3>Hey, I'm <span className="warning">Sanil Jalan</span></h3>
             </Row>
             <Row className="center typewriter">
                 <h1>

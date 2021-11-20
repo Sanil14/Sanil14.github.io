@@ -1,11 +1,12 @@
-import React, { useState, useRef } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useRef, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import "../css/Navbar.css"
 
 const Navbar = () => {
     const [height, setHeight] = useState("0");
     const [open, setOpen] = useState(false);
     const nav = useRef(null);
+    const location = useLocation()
 
     const openNav = () => {
         if (height === "100vh") {
@@ -23,13 +24,25 @@ const Navbar = () => {
     }
 
     return (
-        <section onBlur={nav} ref={nav}>
+        <section ref={nav}>
             <div className="sidepanel wow fadeInRight" style={{ height }}>
                 <a className="closebtn" onClick={hideNav}>&times;</a>
-                <Link to="/"><i className="fas fa-sort-up fa-rotate-90"></i> Home</Link>
-                <Link to="/about" className="aboutme">About Me</Link>
-                <Link to="/projects" className="projects">My Projects</Link>
-                <Link to="/contact">Contact Me</Link>
+                <NavLink exact to="/">
+                <i className={"fas fa-sort-up fa-rotate-90" + ("/" != location.pathname ? " hide" : "")}></i>
+                    Home
+                </NavLink>
+                <NavLink exact to="/about" className="aboutme">
+                <i className={"fas fa-sort-up fa-rotate-90" + ("/about" != location.pathname ? " hide" : "")}></i>
+                    About Me
+                </NavLink>
+                <NavLink exact to="/projects" className="projects">
+                <i className={"fas fa-sort-up fa-rotate-90" + ("/projects" != location.pathname ? " hide" : "")}></i>
+                    My Projects
+                </NavLink>
+                <NavLink exact to="/contact">
+                <i className={"fas fa-sort-up fa-rotate-90" + ("/contact" != location.pathname ? " hide" : "")}></i>
+                    Contact Me
+                </NavLink>
 
                 <div className="socialmedia">
                     <a href="mailto:saniljalan14@gmail.com" target="_blank" rel="noreferrer">

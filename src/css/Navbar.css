@@ -81,6 +81,10 @@
   .sidepanel .socialmedia a:hover .tag {
     visibility: visible;
   }
+
+  .hide {
+    display: none;
+  }
   
   /* Icon 3 */
   
