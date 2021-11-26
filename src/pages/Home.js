@@ -7,9 +7,10 @@ import "../css/Home.css"
 const Home = () => {
     return (
         <Container>
-            <Row className="center title wow fadeIn">
+            <Row className="center title">
                 <h3>Hey, I'm <span className="warning">Sanil Jalan</span></h3>
             </Row>
+            <Row className="filler"></Row>
             <Row className="center typewriter">
                 <h1>
                     <Typewriter

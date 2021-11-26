@@ -13,9 +13,15 @@ body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, serif;
 }
 
+::selection {
+  background: #493700; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffe081; /* Gecko Browsers */
+}
+
 .center {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .title h3 {
@@ -30,4 +36,21 @@ body {
   font-size: 5em;
   font-weight: 500;
   font-family: 'Merriweather', serif;
+}
+
+.warning {
+  color: #ffc107!important;
+}
+
+a:link {
+  color: #c99700!important;
+  text-decoration: none;
+}
+
+a:link:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #946f00!important;
 }

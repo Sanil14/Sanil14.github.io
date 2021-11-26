@@ -31,22 +31,22 @@ const Navbar = () => {
 
     return (
         <section ref={nav}>
-            <div className="sidepanel wow fadeInRight" style={{ height }}>
+            <div className="sidepanel" style={{ height }}>
                 <a className="closebtn" onClick={hideNav}>&times;</a>
                 <NavLink exact to="/">
-                <i className={"fas fa-sort-up fa-rotate-90" + ("/" != location.pathname ? " hide" : "")}></i>
+                <i className={"fas fa-sort-up fa-rotate-90" + ("/" !== location.pathname ? " hide" : "")}></i>
                     Home
                 </NavLink>
                 <NavLink exact to="/about" className="aboutme">
-                <i className={"fas fa-sort-up fa-rotate-90" + ("/about" != location.pathname ? " hide" : "")}></i>
+                <i className={"fas fa-sort-up fa-rotate-90" + ("/about" !== location.pathname ? " hide" : "")}></i>
                     About Me
                 </NavLink>
                 <NavLink exact to="/projects" className="projects">
-                <i className={"fas fa-sort-up fa-rotate-90" + ("/projects" != location.pathname ? " hide" : "")}></i>
+                <i className={"fas fa-sort-up fa-rotate-90" + ("/projects" !== location.pathname ? " hide" : "")}></i>
                     My Projects
                 </NavLink>
                 <NavLink exact to="/contact">
-                <i className={"fas fa-sort-up fa-rotate-90" + ("/contact" != location.pathname ? " hide" : "")}></i>
+                <i className={"fas fa-sort-up fa-rotate-90" + ("/contact" !== location.pathname ? " hide" : "")}></i>
                     Contact Me
                 </NavLink>
 
@@ -70,7 +70,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div id="nav-icon3" className={`row wow slideInDown ${open ? 'open' : ''}`} title="Toggle Navbar" onClick={openNav}>
+            <div id="nav-icon3" className={`row ${open ? 'open' : ''}`} title="Toggle Navbar" onClick={openNav}>
                 <span></span>
                 <span></span>
                 <span></span>
