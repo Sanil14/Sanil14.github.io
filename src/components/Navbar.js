@@ -1,12 +1,18 @@
 import React, { useState, useRef, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "../css/Navbar.css"
+import useNavbarClick from "../hooks/useNavbarClick";
 
 const Navbar = () => {
     const [height, setHeight] = useState("0");
     const [open, setOpen] = useState(false);
     const nav = useRef(null);
     const location = useLocation()
+    const clickedOff = useNavbarClick(nav)
+
+    useEffect(() => {
+        if (clickedOff) hideNav()
+    }, [clickedOff])
 
     const openNav = () => {
         if (height === "100vh") {
