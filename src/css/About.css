@@ -1,3 +1,54 @@
 .subtitle {
     font-size: 1.5rem;
 }
+
+.skills {
+    padding-top: 50px;
+}
+
+.skills .bar {
+    --color: #ebb000;
+    max-width: 500px;
+    margin: 0 auto;
+    --data-axes-color: rgba(255, 255, 255, 0.226);
+    --data-axes-style: solid;
+    --data-axes-width: 1px;
+    --labels-size: 100px !important;
+    --heading-size: 3rem;
+}
+
+.skills .bar caption {
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+.skills .bar tbody {
+    overflow-y: hidden;
+}
+
+.skills .bar tbody th {
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+    background-color: rgb(20, 16, 16);
+    z-index: 1;
+}
+
+.skills .bar tbody td {
+    color: rgb(20, 16, 16);
+    padding-right: 10px;
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+    transform-origin: left;
+    animation: moving-bars 4s ease-in-out;
+}
+
+@keyframes moving-bars {
+    0% {
+        transform: translateX( -100%);
+    }
+    15% {
+        transform: translateX( 0);
+    }
+}
