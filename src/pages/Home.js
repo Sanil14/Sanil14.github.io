@@ -1,28 +1,27 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
 import Typewriter from 'typewriter-effect';
-import "../css/Home.css"
+// import "../css/Home.css"
 
 const Home = () => {
     return (
-        <Container>
-            <Row className="center title">
-                <h3>Hey, I'm <span className="warning">Sanil Jalan</span></h3>
-            </Row>
-            <Row className="filler"></Row>
-            <Row className="center typewriter">
-                <h1>
-                    <Typewriter
-                        options={{
-                            strings: ["Aspiring Web Developer", "Aspiring NodeJS Developer", "Aspiring Backend Developer", "Aspiring Software Engineer"],
-                            autoStart: true,
-                            loop: true,
-                        }}
-                    />
-                </h1>
-            </Row>
-        </Container>
+        <div className="container h-full">
+            <div className="space-y-4">
+                <div className="text-center text-4xl font-medium font-serif">
+                    <h3>Hey, I'm <span className="text-amber-400">Sanil Jalan</span></h3>
+                </div>
+                <div className="text-center px-3 text-5xl font-medium font-serif">
+                    <h1>
+                        <Typewriter
+                            options={{
+                                strings: ["Aspiring Web Developer", "Aspiring NodeJS Developer", "Aspiring Backend Developer", "Aspiring Software Engineer"],
+                                autoStart: true,
+                                loop: true,
+                            }}
+                        />
+                    </h1>
+                </div>
+            </div>
+        </div>
     )
 }
 
