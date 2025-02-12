@@ -29,7 +29,7 @@ const About = () => {
                 </p>
             </div>
             <Row className="skills">
-                <table class="charts-css bar show-labels show-heading show-data-axes show-primary-axis data-spacing-3">
+                <table className="charts-css bar show-labels show-heading show-data-axes show-primary-axis data-spacing-3">
                     <caption>Skills Overview</caption>
                     <tbody>
                         {Object.keys(skills).map((skill) => (

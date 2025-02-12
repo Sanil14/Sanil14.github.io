@@ -67,17 +67,17 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className="mx-auto text-center p-5" title="Toggle Navbar">
-                <button class="relative group" ref={btnRef} onClick={openNav}>
-                    <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[57.5px] h-[57.5px] transform transition-all bg-gray-400 ring-0 ring-gray-300 hover:ring-4 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
-                        <div class="flex flex-col justify-between w-[23px] h-[23px] transform transition-all duration-300 origin-center overflow-hidden">
-                            <div class="bg-white h-[2px] w-8 transform transition-all duration-300 origin-left group-focus:translate-y-7 delay-100"></div>
-                            <div class="bg-white h-[2px] w-8 rounded transform transition-all duration-300 group-focus:translate-y-7 delay-75"></div>
-                            <div class="bg-white h-[2px] w-8 transform transition-all duration-300 origin-left group-focus:translate-y-7"></div>
+            <div className="fixed top-10 left-0 w-screen flex justify-center mx-auto text-center p-5" title="Toggle Navbar">
+                <button className="relative group" ref={btnRef} onClick={openNav}>
+                    <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[57.5px] h-[57.5px] transform transition-all bg-gray-400 ring-0 ring-gray-300 hover:ring-4 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
+                        <div className="flex flex-col justify-between w-[23px] h-[23px] transform transition-all duration-300 origin-center overflow-hidden">
+                            <div className="bg-white h-[2px] w-8 transform transition-all duration-300 origin-left group-focus:translate-y-7 delay-100"></div>
+                            <div className="bg-white h-[2px] w-8 rounded transform transition-all duration-300 group-focus:translate-y-7 delay-75"></div>
+                            <div className="bg-white h-[2px] w-8 transform transition-all duration-300 origin-left group-focus:translate-y-7"></div>
 
-                            <div class="absolute items-center justify-between transform transition-all duration-500 top-3 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12">
-                                <div class="absolute bg-white h-[2px] w-6 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"></div>
-                                <div class="absolute bg-white h-[2px] w-6 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"></div>
+                            <div className="absolute items-center justify-between transform transition-all duration-500 top-3 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12">
+                                <div className="absolute bg-white h-[2px] w-6 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"></div>
+                                <div className="absolute bg-white h-[2px] w-6 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"></div>
                             </div>
                         </div>
                     </div>
