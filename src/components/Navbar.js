@@ -34,13 +34,9 @@ const Navbar = () => {
                     <i className={`fas fa-sort-up fa-rotate-90 text-amber-600 pl-2.5 pt-2.5 ${location.pathname === "/" ? "" : "hidden"}`}></i>
                     Home
                 </NavLink>
-                <NavLink className="block px-8 py-2 text-2xl text-black hover:no-underline transition-colors duration-300 hover:text-gray-700" exact to="/about">
-                    <i className={`fas fa-sort-up fa-rotate-90 text-amber-600 pl-2.5 pt-2.5 ${location.pathname === "/about" ? "" : "hidden"}`}></i>
-                    About Me
-                </NavLink>
-                <NavLink className="block px-8 py-2 text-2xl text-black hover:no-underline transition-colors duration-300 hover:text-gray-700" exact to="/projects">
-                    <i className={`fas fa-sort-up fa-rotate-90 text-amber-600 pl-2.5 pt-2.5 ${location.pathname === "/projects" ? "" : "hidden"}`}></i>
-                    My Projects
+                <NavLink className="block px-8 py-2 text-2xl text-black hover:no-underline transition-colors duration-300 hover:text-gray-700" exact to="/experience">
+                    <i className={`fas fa-sort-up fa-rotate-90 text-amber-600 pl-2.5 pt-2.5 ${location.pathname === "/experience" ? "" : "hidden"}`}></i>
+                    Experience
                 </NavLink>
                 <NavLink className="block px-8 py-2 text-2xl text-black hover:no-underline transition-colors duration-300 hover:text-gray-700" exact to="/contact">
                     <i className={`fas fa-sort-up fa-rotate-90 text-amber-600 pl-2.5 pt-2.5 ${location.pathname === "/contact" ? "" : "hidden"}`}></i>

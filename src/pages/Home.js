@@ -6,7 +6,7 @@ import picture from "../assets/picture.jpg";
 const Home = () => {
     return (
         <div className="flex items-center justify-center container h-screen">
-            <div className="space-y-4">
+            <div className="space-y-4 w-full">
                 <div className="text-center pb-10">
                     <img src={picture} alt="Sanil Jalan" className="rounded-full h-40 w-40 mx-auto" />
                 </div>
@@ -16,7 +16,7 @@ const Home = () => {
                 <div className="text-center px-3 text-4xl font-medium">
                         <Typewriter
                             options={{
-                                strings: ["Site Reliability Engineer.", "Turning Data into Reliability.", "Keeping Systems Measurable.", "Engineering for Uptime."],
+                                strings: ["Site Reliability Engineer.", "Keeping Systems Measurable.", "Engineering for Uptime.", "Building Scalable Systems.", "Automating Everything."],
                                 autoStart: true,
                                 loop: true,
                             }}
